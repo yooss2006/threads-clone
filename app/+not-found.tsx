@@ -9,7 +9,7 @@ export default function NotFound() {
         alignItems: "center",
       }}
     >
-      <Text>This screen doesn&apos;t exist.</Text>
+      <Text>404 Not Found</Text>
     </View>
   );
 }
