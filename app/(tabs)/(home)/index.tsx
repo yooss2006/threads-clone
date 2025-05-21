@@ -1,30 +1,12 @@
 import { BlurView } from "expo-blur";
 import { usePathname, useRouter } from "expo-router";
-import {
-  Dimensions,
-  Image,
-  PixelRatio,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   const router = useRouter();
   const pathname = usePathname();
   const isLoggedIn = false;
-
-  const { width, height } = Dimensions.get("window");
-  console.log(`화면너비: ${width}dp, 화면높이: ${height}dp`);
-
-  console.log(
-    `화면 너비: ${width * PixelRatio.get()}px, 높이: ${
-      height * PixelRatio.get()
-    }px`
-  );
-
   return (
     <SafeAreaView style={styles.container}>
       <BlurView intensity={70} style={styles.header}>
