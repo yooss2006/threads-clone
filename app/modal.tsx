@@ -98,7 +98,6 @@ export default function Modal() {
 
   const getMyLocation = async (id: string) => {
     let { status } = await Location.requestForegroundPermissionsAsync();
-    console.log("getMyLocation", status);
     if (status !== "granted") {
       Alert.alert(
         "Location permission not granted",
